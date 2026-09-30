@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MENU</title>
+  <style>
+    :root {
+      --bg: #000000;
+      --fg: #f5f5f5;
+      --muted: #b8b8b8;
+      --accent: #ff8c42;
+      --accent2: #ffd166;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Courier New", Courier, monospace;
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 48px 20px;
+    }
+
+    .wrap {
+      width: min(760px, 100%);
+    }
+
+    h1 {
+      margin: 0 0 28px 0;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--fg);
+    }
+
+    .tree {
+      white-space: pre;
+      font-size: 1.05rem;
+      line-height: 1.9;
+      overflow-x: auto;
+    }
+
+    .tree a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .tree a:hover {
+      color: var(--accent2);
+      text-decoration: underline;
+    }
+
+    .root {
+      color: var(--fg);
+      font-weight: bold;
+    }
+
+    .note {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>MENU</h1>
+
+    <div class="tree"><span class="root">menu.pilemma.org</span>
+├── <a href="https://hi.pilemma.org" target="_blank">hi.pilemma.org</a>
+│   ├── <a href="https://hi.pilemma.org/lacma/" target="_blank">lacma</a>
+│   └── <a href="https://hi.pilemma.org/lemma/" target="_blank">lemma</a>
+│
+└── cafe.pilemma.org
+    ├── <a href="https://cafe.pilemma.org/bakery/" target="_blank">bakery</a>
+    └── pastry
+        └── <a href="https://cafe.pilemma.org/pastry/yokan/" target="_blank">yokan</a>
+    </div>
+
+    <div class="note">
+      enter where you like.
+    </div>
+  </div>
+</body>
+</html>
